@@ -30,8 +30,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+LOGIN_REDIRECT_URL = 'gallery:home'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
@@ -63,7 +65,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 
 
 TEMPLATES = [
