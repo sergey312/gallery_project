@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.env # Ваш файл .env со секретами
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.vscode/ # Можно игнорировать настройки VS Code, если они специфичны для вас
+pip-log.log
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+*.log
+local_settings.py # Если у вас есть локальные настройки, которые не должны быть в Git
+
+# Django specific
+*.sqlite3 # Ваша база данных SQLite
+*.sqlite3-journal # Журнал SQLite
+/media/ # Папка для загруженных пользователями файлов
+/static_root/ # Папка, куда собираются статические файлы для деплоя
+/staticfiles/ # Альтернативное название для static_root
